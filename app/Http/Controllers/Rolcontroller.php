@@ -12,7 +12,7 @@ class Rolcontroller extends Controller
 {
     //agregamos  
     function __construct(){
-        $this->middleware('permission:ver-rol | crear-rol | editar-rol | borrar-rol', ['only' => ['index']]);
+        $this->middleware('permission:ver-rol|crear-rol|editar-rol|borrar-rol', ['only' => ['index']]);
         $this->middleware('permission: crear-rol', ['only' => ['create', 'store']]);
         $this->middleware('permission: editar-rol', ['only' => ['edit', 'update']]);
         $this->middleware('permission: borrar-rol', ['only' => ['destroy']]);
@@ -75,10 +75,11 @@ class Rolcontroller extends Controller
     {
         $role = Role::find($id);
         $permission = Permission::get();
-        $rolPermissons = DB::table('role_has_permissions')->where('role_has_permissions.roles_id', $id)
-        ->puck('role_has_permissions.permissions_id','role_has_permissions.permissions_id')
-        ->all();
-        return view('roles.editar',compact('role','permission','rolPermissons'));
+        $rolePermissions = DB::table("role_has_permissions")->where("role_has_permissions.role_id",$id)
+            ->pluck('role_has_permissions.permission_id','role_has_permissions.permission_id')
+            ->all();
+    
+        return view('roles.editar',compact('role','permission','rolePermissions'));
     }
 
     /**
@@ -91,6 +92,7 @@ class Rolcontroller extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, ['name' => 'required', 'permission'=> 'required']);
+        
         $role = Role::find($id);
         $role->name = $request->input('name');
         $role->save();

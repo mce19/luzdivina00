@@ -31,7 +31,7 @@
                                         <td class="table-info">{{$usuario->email}}</td>
                                         <td  class="table-info">
                                             @if(!empty($usuario->getRoleNames()))
-                                            @foreach($usuario->getRoleNames() as $RolName)
+                                            @foreach($usuario->getRoleNames() as $rolName)
                                             <h5><span class="badge badge-dark">{{$rolName}}</span></h5>
                                             @endforeach
 
