@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
+use Stevebauman\Purify\Facades\Purify;
 
 return [
 
@@ -166,6 +167,7 @@ return [
 
         //spatie
         Spatie\Permission\PermissionServiceProvider::class,
+        
 
 
         /*
@@ -195,7 +197,8 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // ...
+        //'Purify' => Stevenbauman\Purify\Facades\Purify::class,
+    //prueba de seguridad en ´prueba
     ])->toArray(),
 
 ];
