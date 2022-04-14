@@ -1,0 +1,74 @@
+.body{
+    
+    font-family: 'Roboto', sans-serif;
+    
+}
+.navbar-brand img{
+    width: 100px;
+}
+
+.cursiva {
+    font-family: 'Dancing Script', cursive;
+  }
+  .bg-verde{
+      background-color: green;
+  }
+  .bg-amarillo{
+    background-color: rgb(167, 167, 0);
+}
+  .bg-rojo{
+      background-color: red;
+  }
+  .bg-azul{
+    background-color: blue;
+}
+
+  .cocina img{
+    float: left;
+    }
+    .tit-kids{
+      float: right;
+    }
+
+    .bg-blog-1{
+        background-image: url(../img/Aula.jpeg);
+    }
+    .bg-blog-2{
+        background-image: url(../img/AulaNiños.jpeg);
+    }
+
+    .bg-blog-1, .bg-blog-2{
+        background-position: bottom;
+        background-size: cover;
+        padding: 260px 20px 20px 20px;
+    }
+
+    .pie-pagina{
+       background-image: url(../img/whiteClouds.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 100px;
+      }
+      .form-pie-pagina input, .form-pie-pagina textarea, .btn-enviar{
+        border-color: #000;
+      
+      }
+
+      .form-pie-pagina input::placeholder, .form-pie-pagina textarea::placeholder{
+       color: #000;
+      
+      }
+
+      .borde-rojo{
+        border-color: red !important;
+      } 
+      
+      .titulo-curs{
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+    
+      }
+
+    
+      
+
