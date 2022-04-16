@@ -35,7 +35,15 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ URL::asset('assets/css/style_s.css')}}" rel="stylesheet" />
         <link href="{{ URL::asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
-      
+          <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ URL::asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ URL::asset('assets/css/style_tres.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('assets/css/style_uno.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('assets/css/style_dos.css')}}" rel="stylesheet">
+
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -81,21 +89,22 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto p-4 p-lg-0">
               <a href="#page-top" class="nav-item nav-link active">Misión</a>
-              <a href="#vision" class="nav-item nav-link">Vision</a>
               <a href="#vision" class="nav-item nav-link">Sobre nosotros</a>
+              <a href="#vision" class="nav-item nav-link">Visión</a>
               <a href="#servicio" class="nav-item nav-link">Servicios</a>
+              <a href="#contacto" class="nav-item nav-link">Contacto</a>
               <div class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Otros</a>
                   <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                      <a href="feature.html" class="dropdown-item">Login</a>
-                      <a href="team.html" class="dropdown-item">Servicio TCU</a>
-                      <a href="team.html" class="dropdown-item">Donar</a>
+                      <a href="{{ url('/login') }}" class="dropdown-item">Login</a>
+                      <a href="/ServicioComunal" class="dropdown-item">Servicio TCU</a>
+                      <a href="/matricula" class="dropdown-item">Matricula</a>
                   
                   </div>
               </div>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
+             
           </div>
-          <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+          <a href="/donaciones" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Donar<i class="fa fa-arrow-right ms-3"></i></a>
       </div>
   </nav>
   <!-- Navbar End -->
@@ -150,13 +159,13 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
-                    <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Sobre nosotros</p>
+                    <h1 class="mb-4">Recuerdos de nuestra esencia!</h1>
+                    <p>Fundación Luz Divina es una organización no gubernamental, sin fines de lucro, sin filiación político-partidista, de carácter técnico y naturaleza preventiva, que trabaja para incorporar la cultura de los derechos de la niñez y la adolescencia en la acción política y social.</p>
+                    <p class="mb-4">La Fundación Luz Divina construye, desarrolla y valida modelos de intervención relevantes y efectivos para nuestros objetivos, basados en la experiencia y en la evidencia de resultados. Modelos que se transfieren al Estado por su potencial de escalamiento mediante políticas públicas y programas institucionalizados</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>VISIÓN, Una Costa Rica en la que niñas, niños y adolescentes construyen vidas plenas de luz y de valor, libres de toda violencia y de toda discriminación.</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>MISIÓN Potenciar la incorporación de la cultura de los derechos de la niñez y la adolescencia en la acción política y social de la nación.</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>VALORES El quehacer de la Fundación Luz Divina responde al enfoque de derechos y responsabilidades de las personas menores de edad, el enfoque de curso de vida y el enfoque de género.</p>
                 </div>
             </div>
         </div>
@@ -270,77 +279,90 @@
         </section>
 		<!-- FIN Segunda seccion de prueba -->
 
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+        <!-- Contact Start -->
+    <div class="container-xxl py-5" id="contacto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="h-100 bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-map-marker-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Dirección</p>
+                            <h5 class="mb-0">123 Heredia, San José, Cecudi</h5>
+                        </div>
+                    </div>
                 </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="{{ URL::asset('https://startbootstrap.com/solution/contact-forms')}}"></a>
+                <div class="col-lg-4">
+                    <div class="h-100 bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Telefono</p>
+                            <h5 class="mb-0">+012 345 6789</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="h-100 bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Email</p>
+                            <h5 class="mb-0">info@example.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-light rounded p-5">
+                        <p class="d-inline-block border rounded-pill py-1 px-4">Contacto</p>
+                        <h1 class="mb-4">¡Será un Placer Atenderle!</h1>
+                    
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Apellidos</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Mensaje</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
                         </form>
                     </div>
                 </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100" style="min-height: 400px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.032437847878!2d-84.13316998474224!3d10.014179275536561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fa91bb25d56b%3A0x578fe5283fe8e95e!2sCecudi%2C%20Luz%20Divina!5e0!3m2!1ses!2scr!4v1650136833862!5m2!1ses!2scr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
+    <!-- Contact End -->
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -571,6 +593,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Bootstrap core JS-->
         <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js') }}"></script>
         
@@ -581,6 +604,21 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="{{asset('https://cdn.startbootstrap.com/sb-forms-latest.js') }}"></script>
-        <script src="{{asset('assets/js/script_s.js') }}"></script>
+
+<!-- JavaScript Libraries -->
+<script src="{{asset('https://code.jquery.com/jquery-3.4.1.min.js') }}"></script>
+<script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{asset('assets/lib/wow/wow.min.js') }}"></script>
+<script src="{{asset('assets/lib/easing/easing.min.js') }}"></script>
+<script src="{{asset('assets/lib/waypoints/waypoints.min.js') }}"></script>
+<script src="{{asset('assets/lib/counterup/counterup.min.js') }}"></script>
+<script src="{{asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{asset('assets/lib/tempusdominus/js/moment.min.js') }}"></script>
+<script src="{{asset('assets/lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
+<script src="{{asset('assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+ <!-- Template Javascript -->
+ <script src="{{asset('assets/js/main.js') }}"></script>
+
     </body>
 </html>

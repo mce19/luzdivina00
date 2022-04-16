@@ -21,11 +21,16 @@ USAMOS LA PLANTILLA BLADE
 
 Route::get('/', function () {
     return view('welcome_S');
-});
-Route::view('/','ServicioComunal')->name('ServicioComunal');
-Route::view('/matricula','matricula')->name('matricula');
-Route::view('/Donaciones','Donaciones')->name('Donaciones');
+    
 
+
+});
+
+
+Route::view('/ServicioComunal','ServicioComunal')->name('ServicioComunal');
+
+Route::view('/matricula','matricula')->name('matricula');
+Route::view('/donaciones','donaciones')->name('donaciones');
 
 
  
