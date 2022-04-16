@@ -14,11 +14,21 @@ use App\Http\Controllers\BlogController;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
+
+USAMOS LA PLANTILLA BLADE 
+
 */
 
 Route::get('/', function () {
     return view('welcome_S');
 });
+Route::view('/','ServicioComunal')->name('ServicioComunal');
+Route::view('/matricula','matricula')->name('matricula');
+Route::view('/Donaciones','Donaciones')->name('Donaciones');
+
+
+
+ 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -32,3 +42,4 @@ Route::group(['middleware' => ['auth']], function () {
  Route::resource('blogs', BlogController::class);
     
 });
+

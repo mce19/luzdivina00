@@ -12,12 +12,13 @@
     "devDependencies": {
         "axios": "^0.25",
         "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.21",
         "postcss": "^8.1.14"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.13.1",
         "bootstrap": "^4.0.0",
+        "cowsay": "^1.5.0",
         "datatables.net-dt": "^1.10.21",
         "izitoast": "^1.4.0",
         "jquery": "^3.2",
