@@ -96,7 +96,6 @@
                     <a href="{{ url('/login') }}" class="dropdown-item"></a>
                     <a href="team.html" class="dropdown-item"></a>
                     <a href="team.html" class="dropdown-item"></a>
-                
                 </div>
             </div>
             <a href="#contacto" class="nav-item nav-link"></a>
