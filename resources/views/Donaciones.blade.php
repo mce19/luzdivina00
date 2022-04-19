@@ -101,7 +101,7 @@
             </div>
             <a href="#contacto" class="nav-item nav-link"></a>
         </div>
-        <a href="{{ url('/welcome_S') }}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Volver<i class="fa fa-arrow-right ms-3"></i></a>
+        <!--<a href="{{ url('/welcome_S') }}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Volver<i class="fa fa-arrow-right ms-3"></i></a> -->
     </div>
 </nav>
 <!-- Navbar End -->

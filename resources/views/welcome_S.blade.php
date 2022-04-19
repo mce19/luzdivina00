@@ -89,7 +89,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto p-4 p-lg-0">
               <a href="#page-top" class="nav-item nav-link active">Misión</a>
-              <a href="#vision" class="nav-item nav-link">Sobre nosotros</a>
+              <a href="#sobre" class="nav-item nav-link">Sobre nosotros</a>
               <a href="#vision" class="nav-item nav-link">Visión</a>
               <a href="#servicio" class="nav-item nav-link">Servicios</a>
               <a href="#contacto" class="nav-item nav-link">Contacto</a>
@@ -119,22 +119,22 @@
             <div class="carousel-item active">
               <img src="{{URL::asset('assets/img/Frente.jpeg')}}" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h3>Guarderia Luz Divina</h3>
+                <h6>Ten Fé el control lo tiene !Dios¡</h6>
               </div>
             </div>
             <div class="carousel-item">
               <img src="{{URL::asset('assets/img/Zona de Juego.jpeg')}}" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h3>Luz de esperanza</h3>
+                <h6>Sin fe, nada es posible. Con ella, nada es imposible. "Mary McLeod Bethune"</h6>
               </div>
             </div>
             <div class="carousel-item">
               <img src="{{URL::asset('assets/img/Hamacas.jpeg')}}" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h3>Amor Puro</h3>
+                <h6>La vida está llena de felicidad y lágrimas, sé fuerte y ten fe. "Kareena Kapoor Khan"</h6>
               </div>
             </div>
           </div>
@@ -149,13 +149,13 @@
         </div>
      
          <!-- About Start -->
-    <div  id="vision" class="container-xxl py-5">
+    <div  id="sobre" class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="{{URL::asset('assets/img/EntradaKids.jpeg')}}" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{URL::asset('assets/img/Cocina.jpeg')}}" alt="" style="margin-top: -25%;">
+                        <img class="img-fluid rounded w-75 align-self-end" src="{{URL::asset('assets/img/Cocina.jpeg')}}" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{URL::asset('assets/img/EntradaKids.jpeg')}}" alt="" style="margin-top: -25%;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -202,7 +202,7 @@
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="{{URL::asset('assets/img/nino.jpg')}}" alt="..." />
-                            <p class="color-p">Diversion</p>
+                            <p class="color-p">Diversión</p>
                         </div>
                         
                     </div>
@@ -253,10 +253,10 @@
 		<!-- aa seccion de prueba -->
     
 		<!-- Segunda seccion de prueba -->
-		 <section class="page-section bg-primary text-white mb-0" id="about">
+		 <section class="page-section bg-primary text-white mb-0" id="vision">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">Visión</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -265,8 +265,8 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">La visión de Luz Divina es Ser una organización de referencia para los niños y padres de familia más desfavorecidas del pais, de forma que encuentren en nuestra institución un cauce para mejorar su calidad de vida.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Luz Divina actúa y actuará en comunidades ysectores donde sea solicitada, siempre que tras un análisis técnico adecuado se compruebe que nuestra organización pueda aportar un valor añadido a la intervención propuesta!</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -348,7 +348,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
                                 </div>
                             </div>
                         </form>
@@ -369,27 +369,27 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <h4 class="text-uppercase mb-4">Ubicación</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
+                            Heredia San José, Costa Rica
                             <br />
-                            Clark, MO 65243
+                            
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <h4 class="text-uppercase mb-4">Nuestras redes sociales</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+         
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <h4 class="text-uppercase mb-4">Mas sobre nosotros</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="{{ URL::asset('http://startbootstrap.com')}}">Start Bootstrap</a>
+                            Una pequeña historia en nuestro primero blog creado en el 2012, para vicitarlo preciones el link.
+                            <a href="{{ URL::asset('http://asofeluzdivina.blogspot.com/')}}">Nuestro Primer blog</a>
                             .
                         </p>
                     </div>
@@ -398,7 +398,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+            <div class="container"><small>Copyright &copy; Luz Divina 2022</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -411,7 +411,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Alimentación</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -419,12 +419,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{{URL::asset('assets/img/portfolio/cabin.png')}}assets/img/portfolio/cabin.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="{{URL::asset('assets/img/cocina.jpeg')}}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -443,7 +443,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Diversión</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -451,12 +451,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{{URL::asset('assets/img/Kids.png')}}" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="{{URL::asset('assets/img/nino.jpg')}}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -475,7 +475,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Juegos</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -483,12 +483,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{{URL::asset('assets/img/portfolio/circus.png')}}" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="{{URL::asset('assets/img/Hamacas.jpeg')}}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>

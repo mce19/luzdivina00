@@ -28,7 +28,6 @@ Route::get('/', function () {
 
 
 Route::view('/ServicioComunal','ServicioComunal')->name('ServicioComunal');
-
 Route::view('/matricula','matricula')->name('matricula');
 Route::view('/donaciones','donaciones')->name('donaciones');
 
