@@ -5,6 +5,12 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RolController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\NinoController;
+use App\Http\Controllers\padreController;
+use App\Http\Controllers\asistenciaController;
+use App\Http\Controllers\grupoController;
+use App\Http\Controllers\docenteController;
+use App\Http\Controllers\nivelController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,6 +50,12 @@ Route::group(['middleware' => ['auth']], function () {
  Route::resource('roles', RolController::class);
  Route::resource('usuarios', usuarioController::class);
  Route::resource('blogs', BlogController::class);
+ Route::resource('ninos', NinoController::class);
+ Route::resource('padres', PadreController::class);
+ Route::resource('asistencias', AsistenciaController::class);
+ Route::resource('grupos', GrupoController::class);
+ Route::resource('docentes', DocenteController::class);
+ Route::resource('niveles', NivelController::class);
     
 });
 
