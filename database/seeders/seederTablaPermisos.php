@@ -31,22 +31,22 @@ class seederTablaPermisos extends Seeder
             'borrar-blog',
             //table docente
             'ver-docente',
-            'listar-docente',
+            'crear-docente',
             'editar-docente',
             'borrar-docente',
             //table Asistencia
             'ver-asistencia',
-            'listar-asistencia',
+            'crear-asistencia',
             'editar-asistencia',
             'borrar-asistencia',
             //table Niños
             'ver-niños',
-            'listar-niños',
+            'crear-niños',
             'editar-niños',
             'borrar-niños',  
             //table padres
             'ver-padres',
-            'listar-padres',
+            'crear-padres',
             'editar-padres',
             'borrar-padres',
         ];

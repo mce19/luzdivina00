@@ -3,9 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Docentes;
+use PhpParser\Comment\Doc;
 
 class DocenteController extends Controller
 {
+
+    function __construct(){
+        $this->middleware('permission:ver-docente|crear-docente|editar-docente|borrar-docente')-> only('index');
+        $this->middleware('permission: crear-docente', ['only' => ['create', 'store']]);
+        $this->middleware('permission: editar-docente', ['only' => ['edit', 'update']]);
+        $this->middleware('permission: borrar-docente', ['only' => ['destroy']]);
+
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +24,8 @@ class DocenteController extends Controller
      */
     public function index()
     {
-        //
+        $docentes = Docentes::paginate(5);
+        return view('docente.index', compact('docente'));
     }
 
     /**
@@ -23,7 +35,7 @@ class DocenteController extends Controller
      */
     public function create()
     {
-        //
+        return view('docente.crear');
     }
 
     /**
@@ -34,7 +46,19 @@ class DocenteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        request()->validate([
+
+            'nombre'              => 'required|string|max:255',
+            'email'             => 'required|string|email|max:255|unique:users',
+            'password'          => 'required|string|min:8',
+            'genero'            => 'required|string',
+            'telefono'             => 'required|string|max:255',
+            'fecha_de_nacimiento'       => 'required|date',
+            'direccion_actual' => 'required|string|max:255'
+        ]);
+
+        Docentes::create($request->all());
+        return redirect()->route('docente.index');
     }
 
     /**
@@ -56,7 +80,7 @@ class DocenteController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('docente.editar', compact('docente'));
     }
 
     /**
@@ -66,9 +90,21 @@ class DocenteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,  Docentes $docente)
     {
-        //
+        request()->validate([
+
+            'nombre'              => 'required|string|max:255',
+            'email'             => 'required|string|email|max:255|unique:users',
+            'password'          => 'required|string|min:8',
+            'genero'            => 'required|string',
+            'telefono'             => 'required|string|max:255',
+            'fecha_de_nacimiento'       => 'required|date',
+            'direccion_actual' => 'required|string|max:255'
+        ]);
+        $docente->update($request->all());
+        return redirect()->route('docente.index');
+
     }
 
     /**
@@ -77,8 +113,9 @@ class DocenteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Docentes $docente)
     {
-        //
+        $docente->delete();
+        return redirect()->route('docente.index');
     }
 }

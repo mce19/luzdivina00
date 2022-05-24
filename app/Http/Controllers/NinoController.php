@@ -13,7 +13,7 @@ class NinoController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
