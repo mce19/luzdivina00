@@ -41,44 +41,45 @@
     <!-- Template Stylesheet -->
     <link href="{{ URL::asset('assets/css/style_tres.css')}}" rel="stylesheet">
     <link href="{{ URL::asset('assets/css/style_uno.css')}}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/style_dos.css')}}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/donacion.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('assets/css/style_dos.css')}}" rel="stylesheet"> <!-- este estilo me cambia el footer -->
 
 
     </head>
     <body id="page-top">
         <!-- Navigation-->
-<!-- Topbar Start -->
-<div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
-    <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                <small>123 Heredia  San José, Costa Rica</small>
-            </div>
-            <div class="h-100 d-inline-flex align-items-center py-3">
-                <small class="far fa-clock text-primary me-2"></small>
-                <small>Horario - Lunes a Viernes de:  07.00 AM - 07.00 PM</small>
-            </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                <small class="fa fa-phone-alt text-primary me-2"></small>
-                <small>+012 345 6789</small>
-            </div>
-            <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Topbar End -->
+
+          <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+      <div class="row gx-0 d-none d-lg-flex">
+          <div class="col-lg-7 px-5 text-start">
+              <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                  <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                  <small>123 Heredia  San José, Costa Rica</small>
+              </div>
+              <div class="h-100 d-inline-flex align-items-center py-3">
+                  <small class="far fa-clock text-primary me-2"></small>
+                  <small>Horario - Lunes a Viernes de:  07.00 AM - 07.00 PM</small>
+              </div>
+          </div>
+          <div class="col-lg-5 px-5 text-end">
+              <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                  <small class="fa fa-phone-alt text-primary me-2"></small>
+                  <small>+012 345 6789</small>
+              </div>
+              <div class="h-100 d-inline-flex align-items-center">
+                  <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Topbar End -->
+
 <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
-    <a href="{{ url('/welcome_S') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+    <a href="#page-top" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
   <img src="{{URL::asset('assets/img/LogoLuzDivina.jpg')}}"/><h1 class="m-0 text-primary">Luz divina</h1>
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -86,68 +87,157 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="#page-top" class="nav-item nav-link active"></a>
-            <a href="#vision" class="nav-item nav-link"> </a>
-            <a href="#vision" class="nav-item nav-link"></a>
-            <a href="#servicio" class="nav-item nav-link"></a>
+            <a href="#page-top" class="nav-item nav-link active">Misión</a>
+            <a href="#sobre" class="nav-item nav-link">Sobre nosotros</a>
+            <a href="#vision" class="nav-item nav-link">Visión</a>
+            <a href="#servicio" class="nav-item nav-link">Servicios</a>
+            <a href="#contacto" class="nav-item nav-link">Contacto</a>
             <div class="nav-item dropdown">
-             
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Otros</a>
                 <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="{{ url('/login') }}" class="dropdown-item"></a>
-                    <a href="team.html" class="dropdown-item"></a>
-                    <a href="team.html" class="dropdown-item"></a>
+                    <a href="{{ url('/login') }}" class="dropdown-item">Login</a>
+                    <a href="/ServicioComunal" class="dropdown-item">Servicio TCU</a>
+                    <a href="/matricula" class="dropdown-item">Matricula</a>
                 
                 </div>
             </div>
-            <a href="#contacto" class="nav-item nav-link"></a>
+           
         </div>
-   
+        <a href="/donaciones" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Donar<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->
-  <main role="main" class="container-fluid">
 
-  <div class="row pb-5"> 
-
-    <div class="col-12 col-md-6">
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput14">Nombre Completo</label>
-                <input type="text" class="form-control" id="NombreTCU" placeholder="Nombre">
-              </div>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <!-- Appointment Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="d-inline-block border rounded-pill py-1 px-4">TCU</p>
+                <h1 class="mb-4">Haga una cita para visitar nuestro centro</h1>
+                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                        <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                        <p class="mb-2">Llámanos ahora</p>
+                        <h5 class="mb-0">+012 345 6789</h5>
+                    </div>
+                </div>
+                <div class="bg-light rounded d-flex align-items-center p-5">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                        <i class="fa fa-envelope-open text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                        <p class="mb-2">Envíenos un correo ahora</p>
+                        <h5 class="mb-0">info@example.com</h5>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Grado Académico</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>Colegio Bachillerato</option>
-                <option>Bachillerato Universitario</option>
-                <option>Práctica Profesional</option>
-              </select>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Nombre" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control border-0" placeholder="Correo" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Teléfono" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <select class="form-select border-0" style="height: 55px;">
+                                    <option selected>Grado Académico</option>
+                                    <option value="1">Colegio Bachillerato</option>
+                                    <option value="2">Bachillerato Universitario</option>
+                                    <option value="3">Práctica Profesional</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text"
+                                        class="form-control border-0 datetimepicker-input"
+                                        placeholder="Elije la fecha" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text"
+                                        class="form-control border-0 datetimepicker-input"
+                                        placeholder="Elija la hora" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="button" class="btn btn-light buttonServices">Enviar</button>
-          </form>
+        </div>
     </div>
+</div>
+<!-- Appointment End -->
     
-    <div class="col-12 col-md-6">
-    <h1 class= "tit-TCU">!Realiza el Trabajo Comunal o Práctica Profesional con Nosotros!</h1>
-      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.<br/> 
-        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
-        .</p>
-        <div class="col-10 col-md-10">
-            <img src="{{URL::asset('assets/img/tcu.png')}}" class="w-100"/>
+
+<!-- Footer Start -->
+ <footer class="footer text-center">
+  <div class="container">
+      <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Ubicación</h4>
+              <p class="lead mb-0">
+                  Heredia San José, Costa Rica
+                  <br />
+                  
+              </p>
           </div>
-   </div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Nuestras redes sociales</h4>
+              <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+              <h4 class="text-uppercase mb-4">Mas sobre nosotros</h4>
+              <p class="lead mb-0">
+                  Una pequeña historia en nuestro primero blog creado en el 2012, para vicitarlo preciones el link.
+                  <a href="{{ URL::asset('http://asofeluzdivina.blogspot.com/')}}">Nuestro Primer blog</a>
+                  .
+              </p>
+          </div>
+      </div>
   </div>
-</main>
+</footer>
+<!-- Footer End -->
+
+ 
 
 
+   <!-- JavaScript Libraries -->
+<script src="{{asset('https://code.jquery.com/jquery-3.4.1.min.js') }}"></script>
+<script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{asset('assets/lib/wow/wow.min.js') }}"></script>
+<script src="{{asset('assets/lib/easing/easing.min.js') }}"></script>
+<script src="{{asset('assets/lib/waypoints/waypoints.min.js') }}"></script>
+<script src="{{asset('assets/lib/counterup/counterup.min.js') }}"></script>
+<script src="{{asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{asset('assets/lib/tempusdominus/js/moment.min.js') }}"></script>
+<script src="{{asset('assets/lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
+<script src="{{asset('assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 
+ <!-- Template Javascript -->
+ <script src="{{asset('assets/js/main.js') }}"></script>
 </body>
+
 </html>
