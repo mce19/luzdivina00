@@ -87,23 +87,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="#page-top" class="nav-item nav-link active">Misión</a>
-            <a href="#sobre" class="nav-item nav-link">Sobre nosotros</a>
-            <a href="#vision" class="nav-item nav-link">Visión</a>
-            <a href="#servicio" class="nav-item nav-link">Servicios</a>
-            <a href="#contacto" class="nav-item nav-link">Contacto</a>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Otros</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="{{ url('/login') }}" class="dropdown-item">Login</a>
-                    <a href="/ServicioComunal" class="dropdown-item">Servicio TCU</a>
-                    <a href="/matricula" class="dropdown-item">Matricula</a>
-                
                 </div>
             </div>
            
         </div>
-        <a href="/donaciones" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Donar<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="/welcome_S" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">volver<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->
