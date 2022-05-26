@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -127,37 +127,35 @@
                 <div class="bg-light rounded h-100 d-flex align-items-center p-5">
                     <form>
                         <div class="row g-3">
+                           
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Nombre" style="height: 55px;">
+                                <label for="exampleFormControlInput14">Nombre</label>
+                               
+                                <input type="text" class="form-control border-0" placeholder="Escriba su nombre" style="height: 55px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-0" placeholder="Correo" style="height: 55px;">
+                                <label for="exampleFormControlInput14">Correo</label>
+                               
+                                <input type="email" class="form-control border-0" placeholder="Escriba su correo" style="height: 55px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Teléfono" style="height: 55px;">
+                                 
+                                <label for="exampleFormControlInput14">Teléfono</label>
+                                <input type="text" class="form-control border-0" placeholder="Escriba su teléfono" style="height: 55px;">
                             </div>
+                           
                             <div class="col-12 col-sm-6">
+                                 
+                                <label for="exampleFormControlInput14">Grado académico</label>
                                 <select class="form-select border-0" style="height: 55px;">
-                                    <option selected>Grado Académico</option>
+                                    <option selected>Seleccionar</option>
                                     <option value="1">Colegio Bachillerato</option>
                                     <option value="2">Bachillerato Universitario</option>
                                     <option value="3">Práctica Profesional</option>
                                 </select>
+                                <br>
                             </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="date" id="date" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Elije la fecha" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="time" id="time" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Elija la hora" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>
+                           
                             <div class="col-12">
                                 <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
                             </div>
