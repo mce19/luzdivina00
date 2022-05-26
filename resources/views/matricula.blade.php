@@ -109,40 +109,51 @@
                             <h1 class="mb-4">Ingrese los datos del niño</h1>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <br>
+                                    <label for="exampleFormControlInput14">Nombre</label>
+                                    <input type="text" class="form-control border-0" placeholder="Escriba el nombre" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <br>
+                                    <label for="exampleFormControlInput14">Cédula</label>
+                                    <input type="email" class="form-control border-0" placeholder="Escriba la cédula" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <br>
+                                    <label for="exampleFormControlInput14">Fecha de Nacimiento</label>
+                                    <input type="date" class="form-control" id="BirthDateAlumno"placeholder="#">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <br>
+                                    <label for="exampleFormControlInput14">Edad</label>
+                                    <input type="email" class="form-control border-0" placeholder="Escriba la edad" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Choose Doctor</option>
-                                        <option value="1">Doctor 1</option>
-                                        <option value="2">Doctor 2</option>
-                                        <option value="3">Doctor 3</option>
+                                    <br>
+                                    <label for="exampleFormControlSelect1">Genero</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Femenino</option>
+                                      <option>Masculino</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
+                                    <br>
+                                    <label for="exampleFormControlSelect1">Provincia donde reside</label>
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Provincia</option>
+                                        <option value="1">San josé</option>
+                                        <option value="2">Alajuela</option>
+                                        <option value="3">Cartago</option>
+                                        <option value="3">Heredia</option>
+                                        <option value="3">Puntarenas</option>
+                                        <option value="3">Guanacaste</option>
+                                        <option value="3">limón</option>
+                                    </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                    <div class="col-12">
+                                        <label for="exampleFormControlTextarea1">Dirección Detallada de Residencia</label>
+                                        <textarea class="form-control border-0" rows="5" placeholder="Describa"></textarea>
                                     </div>
                                 </div>
                                 <br>
@@ -157,47 +168,51 @@
                             <form>
                                 <div class="row g-3">
                                     <div class="col-12 col-sm-6">
-                                        <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                        <br>
+                                        <label for="exampleFormControlInput14">Nombre completo</label>
+                                        <input type="text" class="form-control border-0" placeholder="Escriba el nombre" style="height: 55px;">
                                     </div>
                                     <div class="col-12 col-sm-6">
-                                        <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                        <br>
+                                        <label for="exampleFormControlInput14">Cédula</label>
+                                        <input type="email" class="form-control border-0" placeholder="Escriba la cédula" style="height: 55px;">
                                     </div>
                                     <div class="col-12 col-sm-6">
-                                        <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                        <br>
+                                        <label for="exampleFormControlInput14">Fecha de Nacimiento</label>
+                                        <input type="date" class="form-control" id="BirthDateAlumno"placeholder="#">
                                     </div>
+                                    
                                     <div class="col-12 col-sm-6">
-                                        <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
-                                    </div>
-                                    <div class="col-12 col-sm-6">
+                                        <br>
+                                        <label for="exampleFormControlSelect1">Hora de la Cita</label>
                                         <select class="form-select border-0" style="height: 55px;">
-                                            <option selected>Choose Doctor</option>
-                                            <option value="1">Doctor 1</option>
-                                            <option value="2">Doctor 2</option>
-                                            <option value="3">Doctor 3</option>
+                                            <option selected>Hora</option>
+                                            <option value="1">7:00 AM</option>
+                                            <option value="2">7:30 AM</option>
+                                            <option value="3">8:00 AM</option>
+                                            <option value="4">8:30 AM</option>
+                                            <option value="5">9:00 AM</option>
+                                            <option value="6">9:30 AM</option>
+                                            <option value="7">10:00 AM</option>
+                                            <option value="8">10:30 AM</option>
+                                            <option value="9">11:00 AM</option>
+                                           <option value="10">11:30 AM</option>
+                                           <option value="11">1:00 PM</option>
+                                           <option value="12">1:30 PM</option>
+                                           <option value="13">2:00 PM</option>
+                                           <option value="14">2:30 PM</option>
+                                           <option value="15">3:00 PM</option>
+                                           <option value="16">3:30 PM</option>
+                                           <option value="17">4:00 PM</option>
+                                           <option value="18">4:30 PM</option>
+                                           <option value="19">5:00 PM</option>
+                                           <option value="20">5:30 PM</option>
+                                           <option value="21">6:00 PM</option>
                                         </select>
                                     </div>
-                                    <div class="col-12 col-sm-6">
-                                        <div class="date" id="date" data-target-input="nearest">
-                                            <input type="text"
-                                                class="form-control border-0 datetimepicker-input"
-                                                placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <div class="time" id="time" data-target-input="nearest">
-                                            <input type="text"
-                                                class="form-control border-0 datetimepicker-input"
-                                                placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                        </div>
-                                    </div>
                                     <div class="col-12">
-                                        <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Matricular</button>
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
                                     </div>
                                 </div>
                             </form>
