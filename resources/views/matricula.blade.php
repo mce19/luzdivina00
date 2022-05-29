@@ -130,10 +130,11 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <br>
-                                    <label for="exampleFormControlSelect1">Genero</label>
+                                    <label for="exampleFormControlSelect1">Género</label>
                                     <select class="form-control" id="exampleFormControlSelect1">
                                       <option>Femenino</option>
                                       <option>Masculino</option>
+                                      <option>Otros</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">

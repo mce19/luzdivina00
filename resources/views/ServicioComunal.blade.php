@@ -98,7 +98,7 @@
 
   <!-- Appointment Start -->
   <div class="container-xxl py-5">
-    <div class="container">
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <p class="d-inline-block border rounded-pill py-1 px-4">TCU</p>

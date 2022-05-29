@@ -171,6 +171,33 @@
         </div>
     </div>
     <!-- About End -->
+    	<!-- Segunda seccion de prueba -->
+		 <section class="page-section bg-primary text-white mb-0" id="vision">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Visión</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">La visión de Luz Divina es Ser una organización de referencia para los niños y padres de familia más desfavorecidas del pais, de forma que encuentren en nuestra institución un cauce para mejorar su calidad de vida.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Luz Divina actúa y actuará en comunidades ysectores donde sea solicitada, siempre que tras un análisis técnico adecuado se compruebe que nuestra organización pueda aportar un valor añadido a la intervención propuesta!</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="{{ URL::asset('http://asofeluzdivina.blogspot.com/')}}">
+                        <i class="fas fa-blog me-2"></i>
+                        Nuestro Blog
+                    </a>
+                </div>
+            </div>
+        </section>
+		<!-- FIN Segunda seccion de prueba -->
+
 
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="servicio">
@@ -251,34 +278,6 @@
         </section>
         
 		<!-- aa seccion de prueba -->
-    
-		<!-- Segunda seccion de prueba -->
-		 <section class="page-section bg-primary text-white mb-0" id="vision">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Visión</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">La visión de Luz Divina es Ser una organización de referencia para los niños y padres de familia más desfavorecidas del pais, de forma que encuentren en nuestra institución un cauce para mejorar su calidad de vida.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Luz Divina actúa y actuará en comunidades ysectores donde sea solicitada, siempre que tras un análisis técnico adecuado se compruebe que nuestra organización pueda aportar un valor añadido a la intervención propuesta!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="{{ URL::asset('http://asofeluzdivina.blogspot.com/')}}">
-                        <i class="fas fa-blog me-2"></i>
-                        Nuestro Blog
-                    </a>
-                </div>
-            </div>
-        </section>
-		<!-- FIN Segunda seccion de prueba -->
-
         <!-- Contact Start -->
     <div class="container-xxl py-5" id="contacto">
         <div class="container">
