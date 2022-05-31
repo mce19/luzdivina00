@@ -97,6 +97,7 @@
                   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Otros</a>
                   <div class="dropdown-menu rounded-0 rounded-bottom m-0">
                       <a href="{{ url('/login') }}" class="dropdown-item">Login</a>
+                      <a href="{{ url('/register') }}" class="dropdown-item">Registrarse</a>
                       <a href="/ServicioComunal" class="dropdown-item">Servicio TCU</a>
                       <a href="/matricula" class="dropdown-item">Matricula</a>
                   

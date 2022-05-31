@@ -23,4 +23,7 @@
     <a class="nav-link" href="/padre">
         <i class="fas fa-male"></i><span>Padres</span>
     </a>
+    <a class="nav-link" href="/padre">
+        <i class="fas fa-male"></i><span>Evaluaciones</span>
+    </a>
 </li>

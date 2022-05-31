@@ -10,7 +10,7 @@ class DocenteController extends Controller
 {
 
     function __construct(){
-        $this->middleware('permission:ver-docente|crear-docente|editar-docente|borrar-docente')-> only('index');
+        $this->middleware('permission:ver-docente|crear-docente|editar-docente|borrar-docente')->only('index');
         $this->middleware('permission: crear-docente', ['only' => ['create', 'store']]);
         $this->middleware('permission: editar-docente', ['only' => ['edit', 'update']]);
         $this->middleware('permission: borrar-docente', ['only' => ['destroy']]);
