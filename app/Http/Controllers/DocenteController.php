@@ -11,9 +11,9 @@ class DocenteController extends Controller
 
     function __construct(){
         $this->middleware('permission:ver-docente|crear-docente|editar-docente|borrar-docente')-> only('index');
-        $this->middleware('permission: crear-docente', ['only' => ['create', 'store']]);
-        $this->middleware('permission: editar-docente', ['only' => ['edit', 'update']]);
-        $this->middleware('permission: borrar-docente', ['only' => ['destroy']]);
+        $this->middleware('permission:crear-docente', ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-docente', ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-docente', ['only' => ['destroy']]);
 
     }
 
@@ -24,7 +24,7 @@ class DocenteController extends Controller
      */
     public function index()
     {
-        $docentes = Docentes::paginate(5);
+        $docentes = Docentes::with('user')->latest()->paginate(5);
         return view('docente.index', compact('docente'));
     }
 
@@ -67,7 +67,7 @@ class DocenteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Docentes $docente)
     {
         //
     }
@@ -78,7 +78,7 @@ class DocenteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Docentes $docente)
     {
         return view('docente.editar', compact('docente'));
     }
